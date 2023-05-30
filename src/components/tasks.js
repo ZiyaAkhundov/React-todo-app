@@ -16,10 +16,12 @@ function Tasks({ task, setTask }) {
     <>
       <div className="tasks">
         <p className={task.checking === 1 ? 'text-line' : null}>{task.taskName}</p>
+        <div className='Buttons'>
         {task.checking !== 1 ?
-          <button onClick={() => checked(task.id)}>check</button> :null
+          <button className='check' onClick={() => checked(task.id)}>check</button> :null
         }       
-        <button onClick={() => deleted(task.id)}>remove</button>
+        <button className='remove' onClick={() => deleted(task.id)}>remove</button>
+        </div>
       </div>
     </>
   );

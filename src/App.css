@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 100px 0;
 }
 
 .App-logo {
@@ -36,7 +37,61 @@
     transform: rotate(360deg);
   }
 }
-
+body{
+  display: flex;
+  justify-content: center;
+}
 .text-line{
   text-decoration: line-through
+}
+.tasks{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.add{
+  color: white;
+  background-color: blue;
+  border: 0;
+  border-radius: 3px;
+  padding: 6px 10px;
+  margin-left: 10px;
+}
+.check{
+  background-color: rgb(0, 134, 0);
+  margin-right: 3px;
+}
+.remove{
+  background-color: rgb(239, 2, 2);
+}
+.Buttons button{
+  color: white;
+  border: 0;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+.inputTodo{
+  padding: 5px 15px ;
+  background-color: white;
+  border: 1px solid green;
+  border-radius: 3px;
+}
+.inputTodo:focus{
+  outline: none;
+  border: 1px solid red;
+}
+.search{
+  margin-bottom: 20px;
+  width: 245px;
+  display: flex;
+  justify-content: space-between;
+}
+.search input{
+  padding: 3px 10px;
+  border-radius: 3px;
+  border: 1px solid blue;
+}
+.search input:focus{
+  outline: none;
+  border:1px solid red;
 }

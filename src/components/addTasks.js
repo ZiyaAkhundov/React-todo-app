@@ -19,9 +19,9 @@ function AddTask({ tasks, setTasks }) {
   return (
     <>
       <main>
-        <div className="search">
-          <input type="text" ref={inputRef} placeholder="Type text" />
-          <button onClick={inputValue}>Add</button>
+        <div className="addInput">
+          <input className='inputTodo' type="text" ref={inputRef} placeholder="Type text" />
+          <button className='add' onClick={inputValue}>Add</button>
         </div>
       </main>
     </>
