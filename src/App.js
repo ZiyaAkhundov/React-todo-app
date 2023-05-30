@@ -1,14 +1,10 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import AddTask from './components/addTasks';
 import Tasks from './components/tasks';
 
 function App() {
   const [tasks, setTasks] = useState([]);
-
-  useEffect(() => {
-    console.log(tasks);
-  }, [tasks]);
 
   return (
     <div className="App">
